@@ -1,0 +1,12 @@
+int a, b, p, s;
+
+Console.Write("a ni kiriting:"); //Foydalanuvchidan to'rtburchakning 1 chi uzunligi yoki kengligini so'rash.
+a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("b ni kiriting:");//Foydalanuvchidan to'rtburchakning 2 chi uzunligini yoki kengligini sorash..
+b = Convert.ToInt32(Console.ReadLine());
+
+s = a * b; //Perimetrini hisoblash.
+p = 2 * (a +  b); //Yuzasini hisoblash.
+
+Console.WriteLine($" Perimetri:{p} Yuzasi:{s}"); //Natijasini chiqarish.
