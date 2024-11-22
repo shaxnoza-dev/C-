@@ -1,0 +1,37 @@
+string salom = "Salom Dunyo";
+Console.WriteLine(salom);
+Console.WriteLine("C# ga xush kelibsiz!");
+Console.WriteLine("C# ni birgalikda o’rganamiz...");
+Console.WriteLine(2024);
+
+                                                                    //Ko'pincha konsolda bir nechta o'zgaruvchilarning qiymatlarini bitta satrda ko'rsatishga ehtiyoj bor. 
+                                                            Bunday holda biz interpolyatsiya deb ataladigan texnikadan foydalanishimiz mumkin:
+
+string name = "Anvar";
+int age = 34;
+double height = 1.7;
+Console.WriteLine($"ismi: {name}  yoshi: {age}  Balandligi: {height}m");
+
+                                                               //Konsolga bir vaqtning o'zida bir nechta qiymatlarni chiqarish:
+
+string name = "Tom";
+int age = 34;
+double height = 1.7;
+Console.WriteLine("Ism: {0}  Yoshi: {2}  Balandligi: {1}m", name, height, age);
+
+                                                          //O’zgaruvchilarga qiymatlarni kiritish:
+
+
+Console.Write("Ismingizni kiriting: ");
+string? name = Console.ReadLine();
+ 
+Console.Write("Yoshingizni kiriting: ");
+int age = Convert.ToInt32(Console.ReadLine());
+ 
+Console.Write("Bo’yingizni kiriting: ");
+double height = Convert.ToDouble(Console.ReadLine());
+ 
+Console.Write("Ish haqi: ");
+decimal salary = Convert.ToDecimal(Console.ReadLine());
+ 
+Console.WriteLine($"Ism: {name}  Yoshi: {age}  Bo’yi: {height}m Ish haqi: {salary}$");
