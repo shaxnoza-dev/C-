@@ -1,0 +1,37 @@
+using System.ComponentModel.Design;
+
+int a, b, c;
+Console.WriteLine("\n");
+Console.WriteLine("\t===========================================================================");
+Console.WriteLine("\t               UCHTA SON KIRITIB KATTASINI ANIQLAYMIZ!  ");
+Console.WriteLine("\t===========================================================================");
+Console.WriteLine("\n");
+
+Console.Write("Birinchi son kiriting: ");
+a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Ikkinchi son kiriting: ");
+b = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Uchinchi son kiriting: ");
+c = Convert.ToInt32(Console.ReadLine());
+// if else yordamida katta sonlarni topish
+if (a > b && a > c)
+{
+    Console.WriteLine($"\n\t {a} soni {b} va {c} sonidan KATTA ");
+}
+else if (a < b && b > c)
+{
+    Console.WriteLine($"\n\t {b} soni {a} va {c} sonlaridan KATTA ");
+}
+else if (a < c && b > c)
+{
+    Console.WriteLine($"\n\t {c} soni {a}  va {b}  sonlaridan KATTA");
+}
+else
+{
+    Console.WriteLine("\n\tHAMMA SONLAR TENG!");
+}
+Console.WriteLine("\n");
+Console.WriteLine("E'TIBORINGIZ UCHUN RAXMATTTT....");
+Console.ReadLine();
