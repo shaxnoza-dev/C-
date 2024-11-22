@@ -1,0 +1,57 @@
+                                  //  IKKI XIL USUSLDA HISOBLAB KO'RAMIZ
+// BIRINCHI USUL
+int a, b, c, s, p, yuz;
+
+// Uchburchakning tomonlarini kiritish
+Console.Write("Birinchi tomon (a): ");
+a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Ikkinchi tomon (b): ");
+b = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Uchinchi tomon (c): ");
+c = Convert.ToInt32(Console.ReadLine());
+
+// Perimetri hisoblash
+p= a + b + c;
+
+// Yuzini hisoblash (Heron formulasi)
+s = (a + b + c) / 2; 
+
+// yarim perimetr
+yuz = (s * (s - a) * (s - b) * (s - c));
+
+
+Console.WriteLine($" Perimetri:{p} Yuzasi:{s}"); //Natijasini chiqarish.
+
+//IKKINCHI USUL
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Uchburchakning tomonlarini kiritish
+        Console.Write("a tomonini kiriting: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("b tomonini kiriting: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("c tomonini kiriting: ");
+        double c = Convert.ToDouble(Console.ReadLine());
+        
+        // Perimetrni hisoblash
+        double perimeter = a + b + c;
+        
+        // Yuzni hisoblash (Heron formulasi)
+        double s = (a + b + c) / 2;  // Yarim-perimetr
+        double area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));  // Yuz formulasi
+        
+        // Natijalarni chiqarish
+        Console.WriteLine($"Uchburchakning perimetri: {perimeter}");
+        Console.WriteLine($"Uchburchakning yuzi: {area}");
+    }
+}
