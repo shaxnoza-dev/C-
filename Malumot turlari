@@ -1,0 +1,9 @@
+string name = "Shaxnoza";
+int age = 18;
+bool isEmployed = false;
+double weight = 68.65;
+
+Console.WriteLine($"Ism: {name}");
+Console.WriteLine($"Yosh: {age}");
+Console.WriteLine($"O’girligi: {weight}");
+Console.WriteLine($"Ish: {isEmployed}");
